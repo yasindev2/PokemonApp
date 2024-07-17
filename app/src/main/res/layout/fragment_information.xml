@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5669CE"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.InformationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_view_info"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/img_back"
+                android:src="@drawable/img" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:src="@drawable/back"
+                android:padding="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_height="40dp"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            tools:text="Pokemon" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/height_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="85 m" />
+
+
+            <TextView
+                android:id="@+id/weight_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="85 kg" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:text="Weight"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <com.skydoves.progressview.ProgressView
+                android:id="@+id/progressView1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                app:progressView_autoAnimate="true"
+                app:progressView_colorBackground="@color/white"
+                app:progressView_colorProgress="#F44336"
+                app:progressView_labelColorInner="@color/white"
+                app:progressView_labelColorOuter="@color/black"
+                app:progressView_labelSize="13sp"
+                app:progressView_labelSpace="10dp"
+                app:progressView_labelText="achieve 65%"
+                app:progressView_labelTypeface="bold"
+                app:progressView_max="100"
+                app:progressView_min="0"
+                app:progressView_padding="1dp"
+                app:progressView_progress="60"
+                app:progressView_progressFromPrevious="true"
+                app:progressView_radius="12dp" />
+
+            <com.skydoves.progressview.ProgressView
+                android:id="@+id/progressView2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                app:progressView_autoAnimate="true"
+                app:progressView_colorBackground="@color/white"
+                app:progressView_colorProgress="#9C27B0"
+                app:progressView_labelColorInner="@color/white"
+                app:progressView_labelColorOuter="@color/black"
+                app:progressView_labelSize="13sp"
+                app:progressView_labelSpace="10dp"
+                app:progressView_labelText="achieve 65%"
+                app:progressView_labelTypeface="bold"
+                app:progressView_max="100"
+                app:progressView_min="15"
+                app:progressView_padding="1dp"
+                app:progressView_progress="40"
+                app:progressView_progressFromPrevious="true"
+                app:progressView_radius="12dp" />
+
+            <com.skydoves.progressview.ProgressView
+                android:id="@+id/progressView3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                app:progressView_autoAnimate="true"
+                app:progressView_colorBackground="@color/white"
+                app:progressView_colorProgress="#4CAF50"
+                app:progressView_labelColorInner="@color/white"
+                app:progressView_labelColorOuter="@color/black"
+                app:progressView_labelSize="13sp"
+                app:progressView_labelSpace="10dp"
+                app:progressView_labelText="achieve 65%"
+                app:progressView_labelTypeface="bold"
+                app:progressView_max="100"
+                app:progressView_min="15"
+                app:progressView_padding="1dp"
+                app:progressView_progress="40"
+                app:progressView_progressFromPrevious="true"
+                app:progressView_radius="12dp" />
+
+            <com.skydoves.progressview.ProgressView
+                android:id="@+id/progressView4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                app:progressView_autoAnimate="true"
+                app:progressView_colorBackground="@color/white"
+                app:progressView_colorProgress="#FFEB3B"
+                app:progressView_labelColorInner="@color/white"
+                app:progressView_labelColorOuter="@color/black"
+                app:progressView_labelSize="13sp"
+                app:progressView_labelSpace="10dp"
+                app:progressView_labelText="achieve 65%"
+                app:progressView_labelTypeface="bold"
+                app:progressView_max="100"
+                app:progressView_min="15"
+                app:progressView_padding="1dp"
+                app:progressView_progress="40"
+                app:progressView_progressFromPrevious="true"
+                app:progressView_radius="12dp" />
+
+            <com.skydoves.progressview.ProgressView
+                android:id="@+id/progressView5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                app:progressView_autoAnimate="true"
+                app:progressView_colorBackground="@color/white"
+                app:progressView_colorProgress="#FF5722"
+                app:progressView_labelColorInner="@color/white"
+                app:progressView_labelColorOuter="@color/black"
+                app:progressView_labelSize="13sp"
+                app:progressView_labelSpace="10dp"
+                app:progressView_labelText="achieve 65%"
+                app:progressView_labelTypeface="bold"
+                app:progressView_max="100"
+                app:progressView_min="15"
+                app:progressView_padding="1dp"
+                app:progressView_progress="40"
+                app:progressView_progressFromPrevious="true"
+                app:progressView_radius="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

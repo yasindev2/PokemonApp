@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="170dp"
+    android:layout_height="185dp"
+    android:layout_marginStart="7dp"
+    android:layout_marginBottom="15dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="5dp"
+        android:textColor="#3F51B5"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:text="Pokemon" />
+
+</androidx.cardview.widget.CardView>
